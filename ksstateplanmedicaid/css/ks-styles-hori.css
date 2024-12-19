@@ -4171,8 +4171,8 @@ a:focus {
     .secondary-nav ul li.menu-item.dropdown-submenu > .dropdown-menu {
         /*top: 0;
         left: 100%; commented for submenu */
-        position:fixed; /* Added for submenu */
-        margin-top: -5px;
+        position: fixed; /* Added for submenu */
+        margin-top: -5px; /* Added for submenu */
         margin-left: 0px;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
