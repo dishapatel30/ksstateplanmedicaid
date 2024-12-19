@@ -34,5 +34,10 @@ namespace KSStatePlanMedicaidPOC.Controllers
         {
             return View();
         }
+        [Route("AmendmentsTop")]
+        public ActionResult AmendmentsTop()
+        {
+            return View();
+        }
     }
 }
