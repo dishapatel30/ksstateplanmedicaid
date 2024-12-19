@@ -1,0 +1,540 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kansas Medicaid State Plan A | KS Dept. of Health</title>
+
+    <meta name="description" content="The Kansas Department of Health protects and promotes health and ensures access to medical, preventive and rehabilitative services for all citizens of the State of Louisiana." />
+
+    <meta property="og:image" content="logo.png" />
+
+    @*  <link href="/css/bootstrap.min.css" rel="stylesheet">*@
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600|Playfair+Display:400' rel='stylesheet' type='text/css'>
+    <link href="~/css/ks-styles.css?v=8" rel="stylesheet" type="text/css">
+    @*<link href="/css/wysiwyg.css" rel="stylesheet" type="text/css">*@
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    @* <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-M6QZVTF');</script>
+        <!-- End Google Tag Manager -->
+        <!-- MESH Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PHQ8XH2');</script>
+        <!-- End MESH Google Tag Manager -->
+        <!-- ROCKIT SCIENCE Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16661134212"></script>
+        <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16661134212'); </script>
+        <link rel="stylesheet" href="https://df-messenger-prod-j6axfe3vgq-ue.a.run.app/style.css">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script> *@
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    @* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QZVTF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> *@
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="force-wrapper">
+        <!--HEADER-->
+        <header id="header" class="subhome accent-blue">
+            <div class="container">
+                <div class="logo-bar">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6 mob-wdth">
+                            <div class="logo-wrap">
+                                <div class="seal"><a href="#"><img src="~/images/state-seal.gif" alt="Kansas State Seal"></a></div>
+                                <div class="logo"><a href="/"><img src="~/images/kansas-logo.svg" alt="Department of Health and Hospitals logo"></a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 mob-wdth">
+                            <div class="rt-content">
+                                <div class="wrapper">
+                                    <div class="sec-bar sec-titles pull-right">
+                                        @* <span>Surgeon&nbsp;General&nbsp;<strong>RALPH&nbsp;L.&nbsp;ABRAHAM,&nbsp;M.D.</strong></span> <span class="sec-divider">|</span> <span>Secretary&nbsp;<strong>MICHAEL&nbsp;HARRINGTON</strong></span> *@
+                                        @* <span>Surgeon&nbsp;General&nbsp;<strong>ABC M.D.</strong></span> <span class="sec-divider">|</span>  *@<span>Secretary&nbsp;<strong>XYZ</strong></span>
+
+                                    </div>
+                                </div>
+                                @* <div class="wrapper">
+                                        <a class="pull-right" href="/">
+                                            <div class="btn dhh"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back to KS</div>
+                                        </a>
+                                    </div> *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="wrapper">
+                        <div>
+                            <div>
+
+                                <div class="title">Kansas Department of Health and Environment (Medicaid)</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb-bar">
+                <div class="container">
+
+                    @* <a href="#">Kansas.gov</a> &gt; <a href="/">KS</a>
+                        &gt; <a href="/index.cfm/subhome/1">Kansas Department of Health and Environment (Medicaid)</a> *@
+                    <span>Kansas Department of Health and Environment (Medicaid)</span>
+                </div>
+            </div>
+        </header>
+        <!--/HEADER-->
+        <!--CONTENT-->
+
+        <section id="news" class="accent-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle secondary-collapse collapsed" data-toggle="collapse" data-target="#secondary-nav"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div>
+                        <nav id="secondary-nav" class="secondary-nav collapse navbar-collapse">
+
+                            <ul>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/" tabindex="-1" shpid="1" class="link-off">About Medicaid</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Providers </a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Children &amp; Families</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Women</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Long-Term Care</a>
+
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Estate Recovery</a></li>
+
+                                    </ul>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Medicaid Behavioral Health</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Pharmacy</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Report Abuse or Neglect</a>
+
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                    <div class="col-md-10 col-sm-9">
+                        <div class="row main-content">
+                            <div class="col-sm-12">
+                                <p><span class="head">Page Under Construction....</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="push"></div>
+            <a href="/index.cfm?md=form&amp;tmp=site_feedback&amp;nowrap=1" class="feedback-modal-btn" data-toggle="modal" data-target="#feedback-modal">Feedback</a>
+            <span data-acsb="trigger" class="side-accessibility-btn" title="Accessibility Options">Accessibility</span>
+        </section>
+
+        <!--/CONTENT-->
+    </div>
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="txt">
+                    <!--Google Translate-->
+                    <div style="text-align:center; display:block; padding: 12px 0 10px 23px; pointer-events:none">
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'de,el,en,es,fr,it,ja,ko,la,tl,vi,zh-CN,zh-TW,ar', gaTrack: true, gaId: 'UA-3632381-1' }, 'google_translate_element');
+                            }
+                        </script>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </div>
+                    <a href="/privacy-policy">Privacy Policy</a> | <a href="/disclaimer">Disclaimer</a><br>
+                    @* <strong>Mailing Address:</strong> Louisiana Department of Health | P. O. Box 629 | Baton Rouge, LA 70821-0629<br><address> *@
+                    <strong>Mailing Address:</strong> Kansas Mailing address<br><address>
+                        @* <strong>Physical Address:</strong> 628 N. 4th Street | Baton Rouge, LA 70802 | PHONE: 225-342-9500 | FAX: 225-342-5568<br>  <strong>Medicaid Customer Service </strong><em>1-888-342-6207</em> |  <strong>Healthy Louisiana</strong> <em>1-855-229-6848</em> *@
+                        <strong>Physical Address:</strong> Office address<br>  <strong>Medicaid Customer Service PROVIDER</strong><em>800 933 6593</em> |  <strong>MEMBER</strong> <em>800 766 9012</em>
+                        <br>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        @*  <div class="social">
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.62 204.61"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M102.32,204.36c-13.82,0-27.68.64-41.46-.13A63.81,63.81,0,0,1,.31,141.07q-.6-38.71,0-77.46A63.93,63.93,0,0,1,62.06.49c18.11-.7,36.37-.8,54.4.74,30,2.55,54.48,29.76,55.65,59.89.44,11.27,3.73,14.48,14.91,14.52,2,0,4,0,6,0,7.23.28,11.38,4,11.41,11.11.08,20,.58,40-.48,59.94-1.57,29.39-27.83,55.54-57.18,57.29-14.77.87-29.63.15-44.45.15Zm.3-75.09c-12.32,0-24.63-.1-36.95,0-6.85.08-11.47,4.48-11.59,10.55s4.42,10.92,11.15,11c24.8.15,49.61.1,74.41,0a10.49,10.49,0,0,0,10.25-6.67c3.14-7.32-2.15-14.73-10.81-14.86C126.93,129.13,114.78,129.27,102.62,129.27ZM86.48,54.09c-7,0-14-.09-21,0-6.7.11-11.41,4.58-11.46,10.63,0,5.87,4.25,10.59,10.8,10.72q21.43.42,42.9,0c6.58-.13,10.73-4.82,10.65-10.82-.09-6.15-4.66-10.44-11.48-10.54S93.3,54.08,86.48,54.09Z" /></g></g></svg>
+                                </a>
+                            </div> *@
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="siteCredits"><a href="#" target="_blank">Kansas Medicaid Site</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--/FOOTER-->
+
+
+    <div id="feedback-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @*<script src="/js/retina.min.js"></script>
+        <script src="/js/navigation.js"></script>
+        <script src="/js/jquery.placeholder.min.js"></script>
+        <script src="/js/common.js?u=2"></script>
+        <script src="/js/feedback.js"></script>
+        <script src="/js/subhome_carousel.js?u=1"></script>*@
+
+    @*     <script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+
+        <script>
+            //accessibility button - code from client
+            (function(document, tag) { var script = document.createElement(tag); var element = document.getElementsByTagName('body')[0]; script.src = 'https://acsbap.com/api/app/assets/js/acsb.js'; script.async = true; script.defer = true; (typeof element === 'undefined' ? document.getElementsByTagName('html')[0] : element).appendChild(script); script.onload = function() { acsbJS.init({ statementLink : '', feedbackLink : '', footerHtml : '', hideMobile : false, hideTrigger : true, language : 'en', position : 'right', leadColor : '#0d2b3f', triggerColor : '#16828c', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'center', triggerIcon : 'settings', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'left', triggerPositionY : 'center', triggerOffsetX : 0, triggerOffsetY : 0, triggerRadius : '0' } }); };}(document, 'script'));
+        </script>
+        <script src="https://df-messenger-prod-j6axfe3vgq-ue.a.run.app/index.js"></script> *@
+    <!-- SUB HOME -->
+
+</body>
+</html>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kansas Medicaid State Plan A | KS Dept. of Health</title>
+
+    <meta name="description" content="The Kansas Department of Health protects and promotes health and ensures access to medical, preventive and rehabilitative services for all citizens of the State of Louisiana." />
+
+    <meta property="og:image" content="logo.png" />
+
+    @*  <link href="/css/bootstrap.min.css" rel="stylesheet">*@
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600|Playfair+Display:400' rel='stylesheet' type='text/css'>
+    <link href="~/css/ks-styles.css?v=8" rel="stylesheet" type="text/css">
+    @*<link href="/css/wysiwyg.css" rel="stylesheet" type="text/css">*@
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    @* <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-M6QZVTF');</script>
+        <!-- End Google Tag Manager -->
+        <!-- MESH Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PHQ8XH2');</script>
+        <!-- End MESH Google Tag Manager -->
+        <!-- ROCKIT SCIENCE Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16661134212"></script>
+        <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16661134212'); </script>
+        <link rel="stylesheet" href="https://df-messenger-prod-j6axfe3vgq-ue.a.run.app/style.css">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script> *@
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    @* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QZVTF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> *@
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="force-wrapper">
+        <!--HEADER-->
+        <header id="header" class="subhome accent-blue">
+            <div class="container">
+                <div class="logo-bar">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-6 mob-wdth">
+                            <div class="logo-wrap">
+                                <div class="seal"><a href="#"><img src="~/images/state-seal.gif" alt="Kansas State Seal"></a></div>
+                                <div class="logo"><a href="/"><img src="~/images/kansas-logo.svg" alt="Department of Health and Hospitals logo"></a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 mob-wdth">
+                            <div class="rt-content">
+                                <div class="wrapper">
+                                    <div class="sec-bar sec-titles pull-right">
+                                        @* <span>Surgeon&nbsp;General&nbsp;<strong>RALPH&nbsp;L.&nbsp;ABRAHAM,&nbsp;M.D.</strong></span> <span class="sec-divider">|</span> <span>Secretary&nbsp;<strong>MICHAEL&nbsp;HARRINGTON</strong></span> *@
+                                        @* <span>Surgeon&nbsp;General&nbsp;<strong>ABC M.D.</strong></span> <span class="sec-divider">|</span>  *@<span>Secretary&nbsp;<strong>XYZ</strong></span>
+
+                                    </div>
+                                </div>
+                                @* <div class="wrapper">
+                                        <a class="pull-right" href="/">
+                                            <div class="btn dhh"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back to KS</div>
+                                        </a>
+                                    </div> *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="wrapper">
+                        <div>
+                            <div>
+
+                                <div class="title">Kansas Department of Health and Environment (Medicaid)</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb-bar">
+                <div class="container">
+
+                    @* <a href="#">Kansas.gov</a> &gt; <a href="/">KS</a>
+                        &gt; <a href="/index.cfm/subhome/1">Kansas Department of Health and Environment (Medicaid)</a> *@
+                    <span>Kansas Department of Health and Environment (Medicaid)</span>
+                </div>
+            </div>
+        </header>
+        <!--/HEADER-->
+        <!--CONTENT-->
+
+        <section id="news" class="accent-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle secondary-collapse collapsed" data-toggle="collapse" data-target="#secondary-nav"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div>
+                        <nav id="secondary-nav" class="secondary-nav collapse navbar-collapse">
+
+                            <ul>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/" tabindex="-1" shpid="1" class="link-off">About Medicaid</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Providers </a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Children &amp; Families</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Women</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">For Long-Term Care</a>
+
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Estate Recovery</a></li>
+
+                                    </ul>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Medicaid Behavioral Health</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Pharmacy</a>
+
+                                </li>
+
+                                <li class="menu-item dropdown-submenu">
+                                    <a href="/UnderConstruction" tabindex="-1" shpid="1" class="link-off">Report Abuse or Neglect</a>
+
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                    <div class="col-md-10 col-sm-9">
+                        <div class="row main-content">
+                            <div class="col-sm-12">
+                                <p><span class="head">Page Under Construction....</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="push"></div>
+            <a href="/index.cfm?md=form&amp;tmp=site_feedback&amp;nowrap=1" class="feedback-modal-btn" data-toggle="modal" data-target="#feedback-modal">Feedback</a>
+            <span data-acsb="trigger" class="side-accessibility-btn" title="Accessibility Options">Accessibility</span>
+        </section>
+
+        <!--/CONTENT-->
+    </div>
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="txt">
+                    <!--Google Translate-->
+                    <div style="text-align:center; display:block; padding: 12px 0 10px 23px; pointer-events:none">
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'de,el,en,es,fr,it,ja,ko,la,tl,vi,zh-CN,zh-TW,ar', gaTrack: true, gaId: 'UA-3632381-1' }, 'google_translate_element');
+                            }
+                        </script>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </div>
+                    <a href="/privacy-policy">Privacy Policy</a> | <a href="/disclaimer">Disclaimer</a><br>
+                    @* <strong>Mailing Address:</strong> Louisiana Department of Health | P. O. Box 629 | Baton Rouge, LA 70821-0629<br><address> *@
+                    <strong>Mailing Address:</strong> Kansas Mailing address<br><address>
+                        @* <strong>Physical Address:</strong> 628 N. 4th Street | Baton Rouge, LA 70802 | PHONE: 225-342-9500 | FAX: 225-342-5568<br>  <strong>Medicaid Customer Service </strong><em>1-888-342-6207</em> |  <strong>Healthy Louisiana</strong> <em>1-855-229-6848</em> *@
+                        <strong>Physical Address:</strong> Office address<br>  <strong>Medicaid Customer Service PROVIDER</strong><em>800 933 6593</em> |  <strong>MEMBER</strong> <em>800 766 9012</em>
+                        <br>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        @*  <div class="social">
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.62 204.61"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M102.32,204.36c-13.82,0-27.68.64-41.46-.13A63.81,63.81,0,0,1,.31,141.07q-.6-38.71,0-77.46A63.93,63.93,0,0,1,62.06.49c18.11-.7,36.37-.8,54.4.74,30,2.55,54.48,29.76,55.65,59.89.44,11.27,3.73,14.48,14.91,14.52,2,0,4,0,6,0,7.23.28,11.38,4,11.41,11.11.08,20,.58,40-.48,59.94-1.57,29.39-27.83,55.54-57.18,57.29-14.77.87-29.63.15-44.45.15Zm.3-75.09c-12.32,0-24.63-.1-36.95,0-6.85.08-11.47,4.48-11.59,10.55s4.42,10.92,11.15,11c24.8.15,49.61.1,74.41,0a10.49,10.49,0,0,0,10.25-6.67c3.14-7.32-2.15-14.73-10.81-14.86C126.93,129.13,114.78,129.27,102.62,129.27ZM86.48,54.09c-7,0-14-.09-21,0-6.7.11-11.41,4.58-11.46,10.63,0,5.87,4.25,10.59,10.8,10.72q21.43.42,42.9,0c6.58-.13,10.73-4.82,10.65-10.82-.09-6.15-4.66-10.44-11.48-10.54S93.3,54.08,86.48,54.09Z" /></g></g></svg>
+                                </a>
+                            </div> *@
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="siteCredits"><a href="#" target="_blank">Kansas Medicaid Site</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--/FOOTER-->
+
+
+    <div id="feedback-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @*<script src="/js/retina.min.js"></script>
+        <script src="/js/navigation.js"></script>
+        <script src="/js/jquery.placeholder.min.js"></script>
+        <script src="/js/common.js?u=2"></script>
+        <script src="/js/feedback.js"></script>
+        <script src="/js/subhome_carousel.js?u=1"></script>*@
+
+    @*     <script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+
+        <script>
+            //accessibility button - code from client
+            (function(document, tag) { var script = document.createElement(tag); var element = document.getElementsByTagName('body')[0]; script.src = 'https://acsbap.com/api/app/assets/js/acsb.js'; script.async = true; script.defer = true; (typeof element === 'undefined' ? document.getElementsByTagName('html')[0] : element).appendChild(script); script.onload = function() { acsbJS.init({ statementLink : '', feedbackLink : '', footerHtml : '', hideMobile : false, hideTrigger : true, language : 'en', position : 'right', leadColor : '#0d2b3f', triggerColor : '#16828c', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'center', triggerIcon : 'settings', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'left', triggerPositionY : 'center', triggerOffsetX : 0, triggerOffsetY : 0, triggerRadius : '0' } }); };}(document, 'script'));
+        </script>
+        <script src="https://df-messenger-prod-j6axfe3vgq-ue.a.run.app/index.js"></script> *@
+    <!-- SUB HOME -->
+
+</body>
+</html>

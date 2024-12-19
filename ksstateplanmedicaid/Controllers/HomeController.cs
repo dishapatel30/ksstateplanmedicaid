@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ksstateplanmedicaid.Controllers
+namespace KSStatePlanMedicaidPOC.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,17 +13,25 @@ namespace ksstateplanmedicaid.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [Route("UnderConstruction")]
+        public ActionResult UnderConstruction()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        [Route("UnderConstructionTop")]
+        public ActionResult UnderConstructionTop()
         {
-            ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        [Route("Top")]
+        public ActionResult Top()
+        {
+            return View();
+        }
+        [Route("Amendments")]
+        public ActionResult Amendments()
+        {
             return View();
         }
     }
