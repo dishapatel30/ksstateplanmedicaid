@@ -200,6 +200,8 @@
     <Content Include="Views\Home\UnderConstruction.cshtml" />
     <Content Include="Views\Home\UnderConstructionTop.cshtml" />
     <Content Include="Views\Home\AmendmentsTop.cshtml" />
+    <Content Include="Views\Home\AmendmentsWIP.cshtml" />
+    <Content Include="Views\Home\AmendmentsTopWIP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -39,5 +39,15 @@ namespace KSStatePlanMedicaidPOC.Controllers
         {
             return View();
         }
+        [Route("AmendmentsWIP")]
+        public ActionResult AmendmentsWIP()
+        {
+            return View();
+        }
+        [Route("AmendmentsTopWIP")]
+        public ActionResult AmendmentsTopWIP()
+        {
+            return View();
+        }
     }
 }
